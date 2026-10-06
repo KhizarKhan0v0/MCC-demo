@@ -1,0 +1,374 @@
+:root {
+    --bg-color-blue: rgb(27, 160, 212);
+    --bg-color-dark-blue: rgb(0, 24, 102);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* ============utilty Classes============ */
+.container {
+    padding: 10px 200px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    background-color: grey;
+}
+
+.testb {
+    border: 1px solid red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.textc {
+    text-align: center;
+
+}
+
+.section {
+    padding-top: 10vh;
+}
+
+/* ------------------------------------ */
+/* =================Contact Bar========= */
+#contact-bar {
+    gap: 40px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+/* =================Header========= */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    background-color: rgba(156, 9, 9, 0);
+    backdrop-filter: blur(1px);
+    position: fixed;
+    color: white;
+    z-index: 5 !important;
+    animation: navbarBgChange linear both;
+    animation-timeline: scroll();
+
+
+    animation-range: 0px 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo img {
+    width: 9vw;
+    animation: logoSmall linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 100vh;
+}
+
+.nav-actions-container {
+    display: flex;
+    /* background-color: black; */
+    /* width: 60%; */
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 0.8rem;
+    /* background-color: black; */
+    color: white;
+    padding-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav-actions-container>a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    cursor: pointer;
+    gap: 30px;
+    animation: textblack linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 100vh;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+        /* scale: 0.9; */
+        /* color: var(--bg-color-dark-blue); */
+        /* color: yellow; */
+        scale: 1.2;
+        color: gold;
+        /* padding: 8px; */
+        font-weight: bold;
+    }
+}
+
+.nav-actions-container>button {
+    background-color: none;
+    padding: 10px;
+    background-color: var(--bg-color-blue);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(0, 24, 102);
+        scale: 0.98;
+    }
+}
+
+/* =================Scroll Header======== */
+
+
+
+@keyframes navbarBgChange {
+    to {
+        background-color: white;
+        color: black;
+        /* Flip text color to black when bg is white */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    }
+}
+
+@keyframes logoSmall {
+    to {
+        width: 100px;
+
+    }
+}
+
+@keyframes textblack {
+    to {
+        color: var(--bg-color-blue)
+    }
+}
+
+
+/* ==========Hero Container============ */
+.hero-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+
+}
+
+.hero-video-container>video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.heroContainer {
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+
+    /* background-color: rgba(231, 192, 15, 0.096); */
+    /* background-color: rgb(238, 238, 6); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    overflow: hidden;
+}
+
+/* zoom effect */
+.loop-zoom {
+    animation: constantZoom 10s infinite alternate ease-in-out;
+}
+
+/* Define the animation behavior */
+@keyframes constantZoom {
+    0% {
+        transform: scale(1);
+        /* Starting point */
+    }
+
+    100% {
+        transform: scale(1.15);
+        /* Maximum zoom point */
+    }
+}
+
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 1, 1);
+
+
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-color: rgba(0, 0, 0, 0.034);
+    padding-bottom: 10px;
+}
+
+.scroll-indicator {
+    display: inline-block;
+    /* Crucial: permits vertical transforms on a span */
+    color: #ffffff;
+    /* Adjust color to fit your design */
+
+    /* Apply the animation: 2 seconds long, infinite loop, smooth easing */
+    animation: floatUpDown 2s ease-in-out infinite;
+}
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Moves down by 10px at the halfway point */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Smoothly returns to the starting position */
+    }
+}
+
+.heroContent {
+    /* border: 1px solid red; */
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.heroContent h1 {
+    /* color: #d9d9d9;
+    font-weight: 600;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5); */
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+.heroContent p {
+    color: #d9d9d9;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5); */
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+.hero-shape-1 {
+    background-color: rgba(0, 0, 255, 0.856);
+    width: 35%;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    border-top-right-radius: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+    font-size: 4.7rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+
+    /* clip-path: polygon(0% -223%, 106% 66%, 100% 100%, 0% 100%) */
+
+}
+
+
+/* ==============Our Story============= */
+
+.our-story-section {
+    z-index: 4;
+    position: absolute;
+    margin-top: 100vh;
+    background-color: white;
+}
+
+.our-story-container {
+
+
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.our-story-container h2 {
+    text-align: center;
+    width: 50%;
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 113, 255);
+}
+
+.our-story-container div {
+    width: 50%;
+}
+
+.our-story-container p {
+    font-size: 1.3rem;
+}
