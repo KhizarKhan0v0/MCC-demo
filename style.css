@@ -23,6 +23,10 @@ body {
     padding: 10px 200px;
 }
 
+.card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
 .flex {
     display: flex;
 }
@@ -340,7 +344,7 @@ body {
 }
 
 
-/* ==============Our Story============= */
+/* ==============Our Story and Choose Us============= */
 
 .our-story-section {
     z-index: 4;
@@ -349,13 +353,23 @@ body {
     background-color: white;
 }
 
+.our-story-section .container{
+    margin-top: 70px;
+}
+
 .our-story-container {
-
-
     display: flex;
     flex-direction: row;
     padding: 100px;
 }
+
+.choose-us-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: space-between;
+    
+}
+
 
 .our-story-container h2 {
     text-align: center;
@@ -371,4 +385,11 @@ body {
 
 .our-story-container p {
     font-size: 1.3rem;
+}
+
+/* ==========Choose Us============== */
+.choose-us-box{
+    
+    display: flex;
+    justify-content: flex-end;
 }
