@@ -28,6 +28,7 @@ body {
 
 .card{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 12px;
 }
 
 .flex {
@@ -416,5 +417,11 @@ svg{
 
 .choose-us-cards{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 50%
+}
+.choose-us-cards h3{
+    color: var(--headings2-color);
 }
