@@ -365,7 +365,9 @@ body {
 
 .our-story-container p{
      color: rgb(87, 87, 87);
+     color: black;
     font-family: "Libre Caslon Condensed", serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .choose-us-container{
