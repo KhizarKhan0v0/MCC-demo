@@ -305,20 +305,18 @@ body {
 }
 
 .heroContent h1 {
-    /* color: #d9d9d9;
-    font-weight: 600;
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5); */
-    color: #FFFFFF;
+    
+    color: rgb(25 120 245);
     font-size: 4rem;
-    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    text-shadow: 1px 1px 3px #474747;
 }
 
 .heroContent p {
     color: #d9d9d9;
     font-weight: bold;
     font-size: 1.5rem;
-    /* text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5); */
-    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    
+    text-shadow: 1px 1px 3px #474747;
 }
 
 .hero-shape-1 {
@@ -448,7 +446,8 @@ svg{
     justify-content: none;
   }
   #header a{
-    font-size: 0.5rem; 
+    font-size: 0.53rem; 
+    scale: 1;
   }
 
   .nav-actions-container>a{
