@@ -106,15 +106,15 @@ body {
 
 .nav-actions-container {
     display: flex;
-    /* background-color: black; */
+    background-color: white;
     /* width: 60%; */
     justify-content: space-between;
     align-items: center;
-    color: white;
+    
     gap: 10px;
     font-size: 0.8rem;
-    /* background-color: black; */
-    color: white;
+    
+    
     padding-left: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -122,7 +122,7 @@ body {
 
 .nav-actions-container>a {
     text-decoration: none;
-    color: white;
+    color: var(--bg-color-dark-blue);
     transition: all 0.5s ease;
     font-weight: bold;
     cursor: pointer;
@@ -132,14 +132,10 @@ body {
     animation-range: 0px 100vh;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 
     &:hover {
-        /* scale: 0.9; */
-        /* color: var(--bg-color-dark-blue); */
-        /* color: yellow; */
         scale: 1.2;
-        color: gold;
-        /* padding: 8px; */
         font-weight: bold;
     }
 }
@@ -313,7 +309,7 @@ body {
     font-weight: 600;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5); */
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 
@@ -329,7 +325,7 @@ body {
     background-color: rgba(0, 0, 255, 0.856);
     width: 35%;
     height: 77%;
-    position: absolute;
+    position: fixed;
     margin-top: 50vh;
     left: 0;
     z-index: 4;
@@ -383,7 +379,7 @@ body {
 .our-story-container h2 {
     text-align: center;
     
-    font-size: 4.5rem;
+    font-size: 4rem;
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: "Bangers", system-ui; */
     font-family: Arial, Helvetica, sans-serif;
@@ -425,4 +421,67 @@ svg{
 }
 .choose-us-cards h3{
     color: var(--headings2-color);
+}
+
+/* ==========Mobile Responsivenes========== */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: #f4f4f4;
+  }
+
+  .container{
+    padding: none;
+  }
+  #header{
+    width: 100%;
+    justify-content: none;
+  }
+  #header a{
+    font-size: 0.5rem; 
+  }
+
+  .nav-actions-container>a{
+    
+    padding: 5px;
+    display: flex;
+    gap: 1px;
+  }
+
+  .nav-actions-container{
+    background-color: white;
+    gap: 0;
+  }
+  .nav-actions-container button{
+    padding: 6px;
+    font-size: 0.5rem;
+    
+  }
+  .logo img{
+    width: 6rem;
+  }
+  .heroContent{
+    width: 100%;
+  }
+
+  .heroContent h1{
+    font-size: 2rem;
+    
+  }
+  .heroContent p{
+    font-size: 1rem;
+  }
+
+  .hero-shape-1{
+    display: none;
+  }
+  
+  svg{
+    margin-top: 68vh;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
 }
