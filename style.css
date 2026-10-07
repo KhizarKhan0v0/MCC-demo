@@ -423,6 +423,14 @@ svg{
     color: var(--headings2-color);
 }
 
+/* =======What we Build */
+
+
+
+
+
+
+
 /* ==========Mobile Responsivenes========== */
 @media screen and (max-width: 768px) {
   body {
@@ -483,5 +491,43 @@ svg{
   .container {
     width: 100%;
     padding: 0;
+  }
+
+  /* our story mobile */
+  .our-story-container{
+    padding: 0;
+    box-shadow: none;
+    
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .our-story-container h2{
+    font-size: 2rem;
+  }
+  .our-story-container p{
+    font-size: 0.7rem;
+  }
+  /* choose us mobile */
+  .choose-us-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .choose-us-box{
+    display: flex;
+    justify-content: center;
+  }
+  .choose-us-cards h3{
+    font-size: 0.8rem;
+  }
+  .choose-us-cards p{
+    font-size: 0.7rem;
+    color: black;
+    font-size: 0.7;
   }
 }
