@@ -549,7 +549,7 @@ body {
     }
 
     .svg-hero {
-        margin-top: 70vh;
+        margin-top: 71vh;
     }
 
     .container {
@@ -573,9 +573,16 @@ body {
         font-size: 2rem;
     }
 
+    .para-our-story{
+        /* border: 1px solid; */
+        padding: 20px;
+    }
+
     .our-story-container p {
         font-size: 0.7rem;
     }
+
+
 
     /* choose us mobile */
     .choose-us-container {
