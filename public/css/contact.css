@@ -263,6 +263,8 @@
     top: 0px;
     height: 300px;
     background-color: #03a9f4;
+    background-color: #146b93;
+    /* 146b93 */
 }
 
 /* .contact-svg {
@@ -346,6 +348,8 @@
         margin-right: 0px;
         margin-bottom: 35px;
         margin-left: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .contact_us_2 .text-blk.input-title {
