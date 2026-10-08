@@ -471,12 +471,13 @@ body {
 .rightbox-core {
     display: flex;
     align-items: center;
+    
 }
 
 .rightbox-core img {
     /* border: 1px solid; */
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
 
