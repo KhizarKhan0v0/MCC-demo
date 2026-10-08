@@ -433,6 +433,7 @@ body {
 .section-svg {
     position: relative;
     background-color: whitesmoke;
+    top: -1px;
 }
 
 .core-container {
