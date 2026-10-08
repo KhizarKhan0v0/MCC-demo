@@ -344,7 +344,7 @@
         })
 
         gsap.from('.heroContent', {
-            y: -30,
+            // y: -30,
             opacity: 0,
             delay: 1,
             scale:0.8,
@@ -361,20 +361,20 @@
         })
 
 
-        gsap.from(".gsap-our-story h2", {
+        gsap.from(".gsap-our-story ", {
             scrollTrigger: ".our-story-box", 
-            x: -100,
+            y: 40,
             opacity: 0,
-            scale : 2.0,
-            duration: 2,
+            scale : 0.8,
+            duration: 1,
         });
-        gsap.from(".gsap-our-story p", {
-            scrollTrigger: ".our-story-box", 
-            y: 50,
-            opacity: 0,
+        // gsap.from(".gsap-our-story p", {
+        //     scrollTrigger: ".our-story-box", 
+        //     y: 50,
+        //     opacity: 0,
          
-            duration: 2
-        });
+        //     duration: 2
+        // });
 
         // Choose US
         
