@@ -422,7 +422,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%
+    width: 50%;
+    
 }
 
 .choose-us-cards h3 {
@@ -461,12 +462,33 @@ body {
     gap: 32px;
 }
 
+.leftbox-core .choose-us-cards{
+    transition: all 0.5s ease;
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: var(--bg-color-blue);
+    }
+}
+
+.choose-us-cards{
+    transition: all 0.5s ease;
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        
+        
+        
+    }
+}
+
 
 .core-features {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     color: rgb(212, 212, 212);
+   
 }
 
 .rightbox-core {
