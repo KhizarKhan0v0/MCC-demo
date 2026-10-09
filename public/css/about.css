@@ -1,0 +1,22 @@
+.our-story-section{
+    margin-top: 60vh;
+}
+
+.choose-us-container{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-us-container .choose-us-box{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.who-we-are-p{
+    /* border: 1px solid; */
+    margin-top: 30px;
+    width: 50vw !important;
+}

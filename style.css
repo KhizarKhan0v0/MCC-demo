@@ -27,7 +27,7 @@ body {
     padding: 10px 200px;
 }
 
-.nav-active{
+.nav-active {
     color: rgb(5, 3, 173) !important;
 }
 
@@ -423,7 +423,7 @@ body {
     flex-direction: column;
     gap: 10px;
     width: 50%;
-    
+
 }
 
 .choose-us-cards h3 {
@@ -462,23 +462,25 @@ body {
     gap: 32px;
 }
 
-.leftbox-core .choose-us-cards{
+.leftbox-core .choose-us-cards {
     transition: all 0.5s ease;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         background-color: var(--bg-color-blue);
     }
 }
 
-.choose-us-cards{
+.choose-us-cards {
     transition: all 0.5s ease;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-        
-        
-        
+
+
+
     }
 }
 
@@ -488,13 +490,13 @@ body {
     flex-direction: column;
     padding-left: 30px;
     color: rgb(212, 212, 212);
-   
+
 }
 
 .rightbox-core {
     display: flex;
     align-items: center;
-    
+
 }
 
 .rightbox-core img {
@@ -504,7 +506,23 @@ body {
 }
 
 
-
+/* ===================ABOUT HERO=================== */
+#about-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    background: url("./public/images/hero/about-hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -595,7 +613,7 @@ body {
         font-size: 2rem;
     }
 
-    .para-our-story{
+    .para-our-story {
         /* border: 1px solid; */
         padding: 20px;
     }
@@ -636,7 +654,7 @@ body {
 
     /* Core capabilities mobile */
     .core-features {
-        
+
         display: flex;
         padding: 0;
         width: 70% !important;
@@ -647,7 +665,7 @@ body {
     }
 
     .leftbox-core .choose-us-cards {
-        
+
         /* height: 100px; */
     }
 
