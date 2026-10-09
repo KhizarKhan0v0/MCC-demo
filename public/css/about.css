@@ -20,3 +20,75 @@
     margin-top: 30px;
     width: 50vw !important;
 }
+
+/* .our-story-section */
+
+@media screen and (max-width: 768px) {
+    
+    #about-hero{
+        height: 50vh;
+    }
+
+    /* Abut Page Mobile*/
+    #about-hero h1{
+        font-size: 2rem !important;
+        text-align: center;
+        /* border: 1px solid white; */
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #about-hero p{
+        font-size: 0.8rem !important;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about-page-main{
+        margin-top: 50vh !important;
+    }
+
+    .choose-us-container{
+        gap: 1px;
+    }
+
+    .who-we-are-p{
+        
+        margin-top: 10px !important;
+        width: 80vw !important;
+        
+    }
+
+    .categories{
+        /* flex-direction: column; */
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
+
+    .gallery-container{
+        flex-direction: row;
+    }
+    .gallery-card{
+        width: 48% !important;
+        
+    }
+
+   
+    
+    
+
+    .core-features{
+        padding-left: 0;
+    }
+
+
+
+    .core-features p{
+        color: whitesmoke;
+        text-align: center;
+        
+    }
+
+
+}
