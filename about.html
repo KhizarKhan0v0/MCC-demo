@@ -93,7 +93,7 @@
         <!-- Core Services / Gallery-->
         <div style="background-color: whitesmoke;">
             <div class="container">
-                <div class="our-story-container choose-us-container gsap-choose-us">
+                <div class="our-story-container choose-us-container gsap-core-services">
                     <div class="choose-us-box">
                         <h2>Core Services</h2>
                     </div>
@@ -128,7 +128,7 @@
         <!-- Why Choose US / Operational Principles -->
         <div style="background-color: white;">
             <div class="container">
-                <div class="our-story-container choose-us-container gsap-choose-us">
+                <div class="our-story-container choose-us-container gsap-operational">
                     <div class="choose-us-box">
                         <h2>Operational Principles</h2>
                     </div>
@@ -379,6 +379,22 @@
             scale: 0.8,
             duration: 0.5,
             delay:1.5
+        });
+        gsap.from(".gsap-core-services", {
+            scrollTrigger: ".gsap-core-services", 
+            y: 200,
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.5,
+            
+        });
+        gsap.from(".gsap-operational", {
+            scrollTrigger: ".gsap-operational", 
+            y: 200,
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.5,
+            
         });
 
         
