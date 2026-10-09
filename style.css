@@ -530,7 +530,9 @@ body {
     /* background: url("./public/images/hero/about-hero.jpg"); */
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('./public/images/hero/about-hero.jpg');
+    url('https://res.cloudinary.com/lxvpf7zd/image/upload/v1791542870/about-hero-mcc.jpg');
+
+    /*  */
     backdrop-filter: blur(20px);
     background-size: cover;
     background-position: center;
