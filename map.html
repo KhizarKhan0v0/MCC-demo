@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Marker</title>
+    
+    <!-- 1. Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com" />
+    
+    <style>
+        /* 2. Style the map container */
+        #map {
+            width: 100%;
+            height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Our Location</h2>
+    
+    <!-- 3. Create the map container element -->
+    <div id="map"></div>
+    <!-- Latitudes 29.855914 -->
+     <!-- Longitudes 70.919552 -->
+
+    <!-- 4. Include Leaflet JavaScript -->
+    <script src="https://unpkg.com"></script>
+    
+    <script>
+        // 5. Initialize the map and set its view (Latitude, Longitude, and Zoom level)
+        // This example coordinates point to Paris (48.8566, 2.3522). Zoom level 13 is city-level.
+        const map = L.map('map').setView([29.855914, 70.919552], 13);
+
+        // 6. Load and display tile layers on the map from OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // 7. Add a marker at the specified coordinates
+        const marker = L.marker([48.8566, 2.3522]).addTo(map);
+
+        // 8. Optional: Add a popup text message when clicking the marker
+        marker.bindPopup("<b>Hello!</b><br>This is our marked location.").openPopup();
+    </script>
+
+</body>
+</html>
