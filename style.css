@@ -369,11 +369,11 @@ body {
 .our-story-container p {
     color: rgb(87, 87, 87);
     color: black;
-    
-    
+
+
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    
+
 }
 
 .choose-us-container {
@@ -433,9 +433,9 @@ body {
     color: var(--headings2-color);
 }
 
-.choose-us-cards p{
+.choose-us-cards p {
     font-size: 1rem;
-    
+
 }
 
 /* =======Core Capabilities========= */
@@ -528,9 +528,9 @@ body {
     flex-direction: column;
     border: 1px solid;
     /* background: url("./public/images/hero/about-hero.jpg"); */
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('https://res.cloudinary.com/lxvpf7zd/image/upload/v1791542870/about-hero-mcc.jpg');
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://res.cloudinary.com/lxvpf7zd/image/upload/v1791542870/about-hero-mcc.jpg');
 
     /*  */
     backdrop-filter: blur(20px);
@@ -540,8 +540,8 @@ body {
 
 /* ----Gallery Core Services---- */
 
-.categories{
-    
+.categories {
+
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -551,24 +551,27 @@ body {
     flex-wrap: wrap;
     gap: 12px;
 }
-.categories span{
+
+.categories span {
     background-color: var(--bg-color-blue);
     padding: 7px;
     color: white;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.1s ease;
-    &:hover{
+
+    &:hover {
         background-color: rgb(6, 84, 116);
         /* scale: 0.98; */
     }
-    &:active{
+
+    &:active {
         scale: 0.97;
     }
 }
 
-.gallery-container{
-    
+.gallery-container {
+
     height: auto;
     display: flex;
     flex-direction: row;
@@ -576,7 +579,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.gallery-container div{
+
+.gallery-container div {
     height: 100%;
     width: 30%;
     display: flex;
@@ -584,11 +588,93 @@ body {
     align-items: center;
 }
 
-.gallery-container img{
-    width: 200px;   
+.gallery-container img {
+    width: 200px;
 }
 
 
+.team-img-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-img-container div {
+
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.team-img-container img {
+    width: 100%;
+}
+
+
+/* ========Services Container============== */
+.services-1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+
+.services-1 .gallery-card {
+    height: 44vh;
+    
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between !important;
+    /* padding: 30px 10px; */
+}
+
+.service-1-img-container{
+    width: 100% !important;
+    background-size: fill;   
+    height: 50%;
+}
+
+.service-1-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: fill ;
+    object-position: center;
+
+
+    
+}
+
+.service-1-container {
+
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 100% !important;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    height: 50% !important;
+
+}
+.service-1-container h3{
+    width: 100%;
+}
+.service-1-container p{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 
 
 
@@ -611,7 +697,7 @@ body {
     }
 
     #header a {
-        font-size: 0.53rem;
+        font-size: 0.63rem;
         scale: 1;
     }
 
@@ -730,11 +816,23 @@ body {
 
     }
 
-    .leftbox-core .choose-us-cards {
-
-        /* height: 100px; */
+    .services-1{
+      
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .services-1 .gallery-card{
+        height: 30vh;
     }
 
-    
+    .services-1 h3{
+        text-align: left;
+    }
+    .services-1 p{
+        text-align: left;
+    }
+
+
 
 }

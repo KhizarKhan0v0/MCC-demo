@@ -274,17 +274,29 @@
 
 } */
 
+.text-area-box{
+    width: 63%;
+}
+
 @media (max-width: 768px) {
     .contact_us_2 .submit-btn {
         width: 100%;
+        scale: 0.8;
+        font-size: 15px;
     }
 
     .contact_us_2 .input {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .text-area-box{
         width: 100%;
     }
 
     .contact_us_2 .textinput {
         width: 100%;
+        font-size: 12px;
     }
 
     .contact_us_2 .container-block.form-wrapper {
@@ -317,6 +329,7 @@
 
     .contact_us_2 .text-blk.contactus-head {
         font-size: 30px;
+        
         line-height: 40px;
     }
 }
@@ -341,6 +354,7 @@
         margin-right: 0px;
         margin-bottom: 15px;
         margin-left: 0px;
+        width: 100%;
     }
 
     .contact_us_2 .responsive-container-block {
@@ -349,7 +363,7 @@
         margin-bottom: 35px;
         margin-left: 0px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .contact_us_2 .text-blk.input-title {
