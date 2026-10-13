@@ -22,6 +22,36 @@
         .contact-card img{
             width: 100px;
         }
+
+        @media screen and (max-width: 768px) {
+            .contact-card li{
+                font-size: 0.8rem;
+                text-align: center;                
+                
+            }
+            .contact-bar{
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1px;
+                padding: 0;
+                
+            }
+            .contact-card{
+                padding: 10px;
+                height: 130px;
+                scale: 0.8;
+                width: 200px;
+                
+                
+            }
+            .contact-card img{
+                width: 50px;
+            }
+
+            .loc-card{
+                width: 100% !important;
+            }
+        }
     </style>
 
 </head>
@@ -78,15 +108,7 @@
                                     <li>92-3xxxxxxxxx</li>
                                 </span>
                             </span>
-                            <span class="card contact-card" >
-                                <div>
-                                    <img src="./public/images/Contact/location.jpg"  alt="Location">
-                                </div>
-                                <span style="list-style: none;">
-                                    <li>Wasti Mansoorah, P/O Khaas (38340), 9km Shahjamal Jatoi Road, Tehsil and District Muzaffargarh, Punjab, Pakistan</li>
-                                    
-                                </span>
-                            </span>
+                            
                             <span class="card contact-card" >
                                 <div>
                                     <img src="./public/images/Contact/email.jpg" alt="E-mail">
@@ -94,6 +116,15 @@
                                 <span style="list-style: none;">
                                     <li>info@mansoorahgroup.com</li>
                                    
+                                </span>
+                            </span>
+
+                            <span class="card contact-card loc-card" >
+                                <div>
+                                    <img src="./public/images/Contact/location.jpg"  alt="Location">
+                                </div>
+                                <span style="list-style: none;" class="">
+                                    <li>Wasti Mansoorah, P/O Khaas (38340), 9km Shahjamal Jatoi Road, Tehsil and District Muzaffargarh, Punjab, Pakistan</li>
                                 </span>
                             </span>
                             
@@ -195,7 +226,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <!-- <script>
+     <script>
 
         gsap.from('.nav-actions-container', {
             x: 80,
@@ -258,7 +289,7 @@
             opacity: 0,  
             duration: 1
         });
-    </script> -->
+    </script> 
 </body>
 
 </html>
